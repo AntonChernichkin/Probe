@@ -15,16 +15,16 @@ sites = {
 distances = {}
 
 # TODO здесь заполнение словаря
-xy_moscow = sites['Moscow']
-xy_london = sites['London']
-xy_paris = sites['Paris']
+xy_moscow = sites['Moscow'] #координаты Москвы из объекта sites
+xy_london = sites['London'] #координаты Лондона из объекта sites
+xy_paris = sites['Paris'] #координаты Парижа из объекта sites
 
-Moscow_London = ((xy_moscow[0] - xy_london[0]) ** 2 + (xy_moscow[1] - xy_london[1]) ** 2) ** .5
-Moscow_Paris = ((xy_moscow[0] - xy_paris[0]) ** 2 + (xy_moscow[1] - xy_paris[1]) ** 2) ** .5
-Paris_London = ((xy_paris[0] - xy_london[0]) ** 2 + (xy_paris[1] - xy_london[1]) ** 2) ** .5
+Moscow_London = ((xy_moscow[0] - xy_london[0]) ** 2 + (xy_moscow[1] - xy_london[1]) ** 2) ** .5 #расстояние от Москвы до Лондона
+Moscow_Paris = ((xy_moscow[0] - xy_paris[0]) ** 2 + (xy_moscow[1] - xy_paris[1]) ** 2) ** .5 #расстояние от Москвы до Парижа
+Paris_London = ((xy_paris[0] - xy_london[0]) ** 2 + (xy_paris[1] - xy_london[1]) ** 2) ** .5 #расстояние от Лондона до Парижа
 
-distances['Moscow'] = {}
-distances['Moscow']['London'] = Moscow_London
+distances['Moscow'] = {}  #создание пустого ключа-объекта Москва
+distances['Moscow']['London'] = Moscow_London #создание в подъобъекте Москва ключа Лондон с расстоянием до него от москвы
 distances['Moscow']['Paris'] = Moscow_Paris
 distances['London'] = {}
 distances['London']['Moscow'] = Moscow_London
