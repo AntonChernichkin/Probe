@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+def toFixed(numObj, digits=0):
+    return f"{numObj:.{digits}f}"
 # Есть значение радиуса круга
 radius = 42
 
@@ -12,6 +14,7 @@ radius = 42
 # TODO здесь ваш код
 Pi = 3.1415926
 S = Pi * radius ** 2
+S = toFixed(S, 4)
 print(S)
 
 # Далее, пусть есть координаты точки
