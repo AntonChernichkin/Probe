@@ -22,12 +22,16 @@ secret_message = [
 # Если нужны вычисления и разные пробы - делайте это в консоли пайтона, тут нужен только результат
 
 # TODO вывести расшифрованное сообщение
-first_mass = secret_message[0][3]
-second_mass = secret_message[1][9:13]
-therd_mass = secret_message[2][5:15:2]
-forth_mass = secret_message[3][7:13:-1]
-five_mass = secret_message[4][16:21:-1]
+keyword = secret_message[0][3] + secret_message[1][9:13] + secret_message[2][5:15:2] + secret_message[3][7:13:-1] + secret_message[4][16:21:-1]
 
-key = first_mass + second_mass + therd_mass + forth_mass + five_mass
 
-print(key)
+
+# first_mass = secret_message[0][3]
+# second_mass = secret_message[1][9:13]
+# therd_mass = secret_message[2][5:15:2]
+# forth_mass = secret_message[3][7:13:-1]
+# five_mass = secret_message[4][16:21:-1]
+#
+# key = first_mass + second_mass + therd_mass + forth_mass + five_mass
+
+print(keyword)
