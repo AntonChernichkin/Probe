@@ -23,15 +23,17 @@ Moscow_London = ((xy_moscow[0] - xy_london[0]) ** 2 + (xy_moscow[1] - xy_london[
 Moscow_Paris = ((xy_moscow[0] - xy_paris[0]) ** 2 + (xy_moscow[1] - xy_paris[1]) ** 2) ** .5 #расстояние от Москвы до Парижа
 Paris_London = ((xy_paris[0] - xy_london[0]) ** 2 + (xy_paris[1] - xy_london[1]) ** 2) ** .5 #расстояние от Лондона до Парижа
 
-distances['Moscow'] = {}  #создание пустого ключа-объекта Москва
+distances['Moscow'] = {} #создание пустого ключа-объекта Москва
 distances['Moscow']['London'] = Moscow_London #создание в подъобъекте Москва ключа Лондон с расстоянием до него от москвы
 distances['Moscow']['Paris'] = Moscow_Paris
+
 distances['London'] = {}
 distances['London']['Moscow'] = Moscow_London
 distances['London']['Paris'] = Paris_London
+
 distances['Paris'] = {}
 distances['Paris']['Moscow'] = Moscow_Paris
-distances['Paris']['London'] = Paris_London;
+distances['Paris']['London'] = Paris_London
 
 print(distances)
 
