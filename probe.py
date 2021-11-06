@@ -1,2 +1,8 @@
-print('hello world');
-print("And it's awesome");
+a = None
+if a:
+    print("Done")
+else:
+    print('adsad')
+
+x = ['asdaaaaaaaaaaaaaaaaaaaaaaaaaa', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'aaaaaadddddddddddddddddddddddddddddddd',
+     'assssssssssssssssssssssssssssssssss', ]
