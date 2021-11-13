@@ -8,6 +8,13 @@
 # Формат вывода:
 #   Целочисленное деление ХХХ на YYY дает ZZZ
 
-a, b = 179, 37
+a, b = 1790, 37
+c = a
+count = 0
+while c > b:
+    c = c - b
+    count = count + 1
+    print(c, b)
+else:
+    print("Целочисленное деление " + str(a) + " на " + str(b) + " дает " + str(count))
 
-# TODO здесь ваш код
